@@ -1,0 +1,13 @@
+footer {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  width: 100%;
+  background: #201401;
+  color: var(--dourado-suave);
+}
+footer img {
+  height: 80px;
+  filter: brightness(2000%);
+  margin-right: 30px;
+}

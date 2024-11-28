@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPG - POO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assents/styles/global.css" />
+  </head>
+  <body>
+    <header>
+      <a href="">
+        <img
+          src="./assents/img/LogoSample_ByTailorBrands-removebg-preview.png"
+          alt=""
+        />
+      </a>
+    </header>
+    <main>
+      <div id="player-section">
+        <div class="character">
+          <img src="./assents/img/___1_-removebg-preview.png" alt="" />
+          <h2>Guerreiro</h2>
+          <div class="character-stats">
+            <p id="warrior-stats"></p>
+          </div>
+          <div class="character-actions">
+            <button id="warrior-attack" class="button">Atacar</button>
+            <button id="warrior-info" class="button">Ver Info</button>
+          </div>
+        </div>
+        <div class="character">
+          <img src="./assents/img/___2_-removebg-preview.png" alt="" />
+          <h2>Feiticeiro</h2>
+          <div class="character-stats">
+            <p id="sorcerer-stats"></p>
+          </div>
+          <div class="character-actions">
+            <label for="sorcerer-aura">Escolha a Aura do Mago:</label>
+            <select id="sorcerer-aura" class="selection">
+              <option value="fire">Fogo</option>
+              <option value="ice">Gelo</option>
+              <option value="lightning">Raio</option>
+            </select>
+            <button id="sorcerer-set-aura" class="button">Definir Aura</button>
+            <button id="sorcerer-special-attack" class="button">
+              Ataque Especial
+            </button>
+          </div>
+          <div>
+            <button id="sorcerer-attack" class="button">Atacar</button>
+            <button id="sorcerer-info" class="button">Ver Info</button>
+          </div>
+        </div>
+
+        <div class="character">
+          <img src="./assents/img/_-removebg-preview.png" alt="" />
+          <h2>Curandeiro</h2>
+          <div class="character-stats">
+            <p id="healer-stats"></p>
+          </div>
+          <div class="character-actions">
+            <div>
+              <div>
+                <label for="heal-target"
+                  >Escolha um personagem para curar:</label
+                >
+                <select id="heal-target" class="selection">
+                  <option value="w1">Leopoldo (Guerreiro)</option>
+                  <option value="s1">Baltazar (Mago)</option>
+                  <option value="h1">Ancião (Healer)</option>
+                </select>
+                <button id="healer-heal" class="button">Curar</button>
+              </div>
+            </div>
+
+            <button id="healer-attack" class="button">Atacar</button>
+            <button id="healer-info" class="button">Ver Info</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="boss-section">
+        <img src="./assents/img/Arte_De_Monstro-removebg-preview.png" alt="" />
+        <h2>Boss</h2>
+
+        <div class="character-stats">
+          <p id="boss-stats"></p>
+        </div>
+        <div class="boss-actions">
+          <button id="boss-at" class="button">Atacar</button>
+          <button id="boss-info" class="button">Ver Info</button>
+        </div>
+      </div>
+    </main>
+    <div id="game-log">
+      <h3>Registro do Jogo</h3>
+      <div id="text-output"></div>
+    </div>
+    <footer>
+      <a href="">
+        <img
+          src="./assents/img/IntitutoFederal-aplicações-verticais.png"
+          alt=""
+        />
+      </a>
+      <div class="about">
+        <p>
+          Esse site é um projeto do IFSULDEMINAS - campus Passos, requerido da
+          materia de Paradigmas de linguagem de programação no 2° semestre de
+          2024, aplicado pelo professor Jonas, realizado pelo aluno davi
+          henrique.
+        </p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
